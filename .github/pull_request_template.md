@@ -1,9 +1,4 @@
-## Title
-### Task 
-
-```
-Task [name](URL)
-```
+## Task [name](URL)
 
 ## Changes proposed in this pull request:
 * 
@@ -12,7 +7,6 @@ Task [name](URL)
 - 
 
 ## Screenshots
-
 
 ## (Optional) What I have learned working on this feature:
 * 
