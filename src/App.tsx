@@ -5,18 +5,19 @@ import landscape from "./images/image1.png";
 function App() {
   return (
     <div className="App" style={styles.background}>
-      <div style={styles.container}>
-        <p style={styles.title}>Welcome to KidzMathicon</p>
+      <div className="Container">
+        <p style={styles.title}>KidzMathicon</p>
       </div>
-      <button>Start</button>
-      <a href="https://www.vecteezy.com/free-vector/nature">
+      <button className="Button">Start</button>
+      {/* <a href="https://www.vecteezy.com/free-vector/nature">
         Nature Vectors by Vecteezy
-      </a>
+      </a> */}
     </div>
   );
 }
 
 export default App;
+
 const styles = {
   background: {
     backgroundImage: `url(${landscape})`,
@@ -27,12 +28,10 @@ const styles = {
     height: "100vh",
   },
   title: {
-    color: "#FAFF02",
-    fontSize: 55,
-    fontFamily: "Chalkduster",
-  },
-  container: {
-    backgroundColor: "#f8d5e2",
+    color: "rgb(240,224,42)",
+    fontSize: "5vw",
+    fontFamily: "Permanent Marker",
+    textShadow: "-2px 0 black, 0 2px black, 2px 0 black, 0 -2px black",
   },
 };
 
