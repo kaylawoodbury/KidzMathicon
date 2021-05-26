@@ -1,14 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
+import MultiplicationTableChoice from "./components/MultiplicationTableChoice";
 import landscape from "./images/image1.png";
 
 function App() {
+  const [setTable, setSetTable] = useState(false);
   return (
     <div className="App" style={styles.background}>
-      <div className="Container">
-        <p style={styles.title}>KidzMathicon</p>
-      </div>
-      <button className="Button">Start</button>
+      {!setTable && (
+        <div>
+          <div className="Container">
+            <p style={styles.title}>KidzMathicon</p>
+          </div>
+          <button className="StartButton" onClick={() => setSetTable(true)}>
+            Start
+          </button>
+        </div>
+      )}
+      {setTable && <MultiplicationTableChoice />}
       {/* <a href="https://www.vecteezy.com/free-vector/nature">
         Nature Vectors by Vecteezy
       </a> */}
