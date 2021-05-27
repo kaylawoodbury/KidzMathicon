@@ -5,10 +5,10 @@ import landscape from "./images/image1.png";
 function App() {
   return (
     <div className="App" style={styles.background}>
-      <div className="Container">
+      <div data-cy='title' className="Container">
         <p style={styles.title}>KidzMathicon</p>
       </div>
-      <button className="Button">Start</button>
+      <button data-cy='startButton' className="Button">Start</button>
       {/* <a href="https://www.vecteezy.com/free-vector/nature">
         Nature Vectors by Vecteezy
       </a> */}
