@@ -84,6 +84,7 @@
   overflow: hidden;
   margin-left: 15%;
   margin-right: 15%;
+  margin-top: 2%;
 }
 .Button{
   margin: 2%;
@@ -93,7 +94,7 @@
   background-color:#c123de;
   border-radius:10px;
   border: 1px solid rgba( 255, 255, 255, 0.50 );
-  box-shadow: 0 8px 32px 0 rgba(  255, 255, 255, 0.37 );
+  box-shadow: 0 8px 20px 0 rgba(  255, 255, 255, 0.20 );
   cursor:pointer;
   color:#ffffff;
   font-family:Arial;
