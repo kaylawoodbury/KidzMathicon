@@ -1,25 +1,19 @@
-import React from 'react'
+import React from "react";
+import Button from "./button/button";
 
 const MultiplicationTableChoice = () => {
+  let buttonValues: number[] = Array.from(Array(10), (_, i) => i+1)
+  console.log(buttonValues)
+  let buttonList = buttonValues.map((buttonValue) => {
+    return <Button text={buttonValue}/>;
+  });
 
   return (
     <div>
       <p>Choose a Table to Practice</p>
-      <div className="ButtonContainer">
-      <button className="Button">1</button>
-      <button className="Button">2</button>
-      <button className="Button">3</button>
-      <button className="Button">4</button>
-      <button className="Button">5</button>
-      <br/>
-      <button className="Button">6</button>
-      <button className="Button">7</button>
-      <button className="Button">8</button>
-      <button className="Button">9</button>
-      <button className="Button">10</button>
-      </div>
+      <div className="ButtonContainer">{buttonList}</div>
     </div>
-  )
-}
+  );
+};
 
-export default MultiplicationTableChoice
+export default MultiplicationTableChoice;

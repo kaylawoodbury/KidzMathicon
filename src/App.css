@@ -81,11 +81,10 @@
 }
 
 .ButtonContainer{
-  margin: auto
+  /* margin: auto */
 }
 .Button{
   margin: 2%;
-  margin-top: 10vw;
   box-shadow:inset 0px 1px 0px 0px #e184f3;
   background:linear-gradient(to bottom, #b07fde 5%, rgba( 160, 17, 144, 0.8 ));
   background-color:#c123de;
