@@ -10,8 +10,8 @@ const MultiplicationTableChoice = () => {
 
   return (
     <div style={{marginTop: 0}}>
-      <p style={styles.title}>Choose a Table to Practice</p>
-      <div className="ButtonContainer">{buttonList}</div>
+      <p style={styles.title} data-cy='multiplicationTitle'>Choose a Table to Practice</p>
+      <div className="ButtonContainer" data-cy='multiplicationChoices'>{buttonList}</div>
     </div>
   );
 };

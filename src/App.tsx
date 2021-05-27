@@ -12,7 +12,7 @@ function App() {
           <div className="Container">
             <p style={styles.title}>KidzMathicon</p>
           </div>
-          <button className="StartButton" onClick={() => setSetTable(true)}>
+          <button className="StartButton" data-cy='startButton' onClick={() => setSetTable(true)}>
             Start
           </button>
         </div>
