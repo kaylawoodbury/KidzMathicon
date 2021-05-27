@@ -5,7 +5,7 @@ class Button extends React.Component<ButtonProps, {}> {
   render() {
     const { text, children } = this.props;
 
-    // const content = <p>{text}</p>;
+    // const content = ( children || <p>{text}</p>);
 
     return (
       <div>

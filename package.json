@@ -19,6 +19,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "cy-test": "PORT=3000 BROWSER=none react-scripts start & cypress run",
+    "cy": "PORT=3000 BROWSER=none react-scripts start & cypress open",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "test-jest": "jest"
