@@ -9,10 +9,14 @@ function App() {
     <div className="App" style={styles.background}>
       {!setTable && (
         <div>
-          <div data-cy='title' className="Container">
+          <div data-cy="title" className="Container">
             <p style={styles.title}>KidzMathicon</p>
           </div>
-          <button className="StartButton" data-cy='startButton' onClick={() => setSetTable(true)}>
+          <button
+            className="StartButton"
+            data-cy="startButton"
+            onClick={() => setSetTable(true)}
+          >
             Start
           </button>
         </div>
