@@ -1,11 +1,11 @@
 const { exists } = require("fs");
 
-describe('', () => {
+describe('User can', () => {
   beforeEach(() => {
     cy.visit("/");
   });
   
-  it('Successfully', () => {
+  it('successfully see landing page', () => {
     cy.get("[data-cy='title']").should("contain", "KidzMathicon");
     cy.get("[data-cy='startButton']").should("exist"); 
   });
