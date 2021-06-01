@@ -5,13 +5,17 @@ const GamePage = (value: any) => {
   let chance = new Chance()
   let randomMultiplicator = chance.integer({ min: 0, max: 10 })
   let multiplier = value.value
+  let result = multiplier * randomMultiplicator
 
-  console.log({value})
+
+  console.log({result})
   return (
-    <div style={{paddingTop: "10%", display: "flex", alignItems: "center" , justifyContent: "space-between", marginRight: "25vw", marginLeft: "25vw"}}>
+    <div style={{paddingTop: "10%", display: "flex", alignItems: "center" , justifyContent: "space-between", marginRight: "20vw", marginLeft: "20vw"}}>
       <p className="Box">{multiplier}</p>
       <p style={styles.title}>X</p>
       <p className="Box">{randomMultiplicator}</p>
+      <p style={styles.title}>=</p>
+      <input className="Box"></input>
     </div>
   )
 }
