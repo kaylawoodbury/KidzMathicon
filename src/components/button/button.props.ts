@@ -4,4 +4,5 @@ export interface ButtonProps {
   backgroundColor?: string;
   textColor?: string;
   id: number;
+  onClick: () => void;
 }
