@@ -1,11 +1,13 @@
-import React from "react";
+import React, {useState} from "react";
 import Button from "./button/button";
+import GamePage from "./GamePage";
 
 const MultiplicationTableChoice = () => {
+const [buttonSelection, setButtonSelection] = useState()
   let buttonValues: number[] = Array.from(Array(10), (_, i) => i + 1);
   console.log(buttonValues);
   let buttonList = buttonValues.map((buttonValue) => {
-    return <Button text={buttonValue} />;
+    return <Button text={buttonValue} id={buttonValue}/>;
   });
 
   return (
@@ -16,6 +18,7 @@ const MultiplicationTableChoice = () => {
       <div className="ButtonContainer" data-cy="multiplicationChoices">
         {buttonList}
       </div>
+      {buttonSelection !== undefined && <GamePage value={buttonSelection}/>}
     </div>
   );
 };

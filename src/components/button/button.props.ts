@@ -3,4 +3,5 @@ export interface ButtonProps {
   isLoading?: boolean;
   backgroundColor?: string;
   textColor?: string;
+  id: number;
 }
