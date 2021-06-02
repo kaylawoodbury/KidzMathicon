@@ -51,7 +51,7 @@
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
-.StartButton {
+.startButton {
   margin: "auto";
   margin-top: 10vw;
   box-shadow: inset 0px 1px 0px 0px #e184f3;
@@ -86,6 +86,7 @@
   margin-right: 15%;
   margin-top: 2%;
 }
+
 .Button {
   margin: 2%;
   margin-top: 5vw;
