@@ -7,7 +7,7 @@ const MultiplicationTableChoice = () => {
 const [buttonSelection, setButtonSelection] = useState(0)
   let buttonValues: number[] = Array.from(Array(10), (_, i) => i + 1);
   let buttonList = buttonValues.map((buttonValue: number) => {
-    return <Button text={buttonValue} id={buttonValue} onClick={()=> setButtonSelection(buttonValue)}/>;
+    return <Button text={buttonValue} id={buttonValue} onClick={()=> setButtonSelection(buttonValue)} data-cy={`multiplier-${buttonValue}`}/>;
   });
 
   return (

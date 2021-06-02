@@ -38,7 +38,7 @@ const GamePage = (value: any) => {
           marginLeft: "20vw",
         }}
       >
-        <p className="Box">{multiplier}</p>
+        <p className="Box" data-cy='multiplier'>{multiplier}</p>
         <p style={styles.title}>X</p>
         <p className="Box">{multiplicator}</p>
         <p style={styles.title}>=</p>
