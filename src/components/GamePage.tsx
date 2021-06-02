@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Button from "./button/button";
-let Chance = require("chance");
+import { generateNumber } from "./actions/generateNumber";
 
 const GamePage = (value: any) => {
   const [answer, setAnswer] = useState("");
@@ -8,8 +8,7 @@ const GamePage = (value: any) => {
   let multiplier = value.value;
 
   if (answer.length < 1 && multiplicator === 0) {
-    let chance = new Chance();
-    let randomNumber = chance.integer({ min: 1, max: 10 });
+    let randomNumber= generateNumber();
     setMultiplicator(randomNumber);
   }
 
@@ -38,17 +37,25 @@ const GamePage = (value: any) => {
           marginLeft: "20vw",
         }}
       >
-        <p className="Box" data-cy='multiplier'>{multiplier}</p>
+        <p className="Box" data-cy="multiplier">
+          {multiplier}
+        </p>
         <p style={styles.title}>X</p>
         <p className="Box">{multiplicator}</p>
         <p style={styles.title}>=</p>
         <input
           className="Box"
           onChange={(i) => setAnswer(i.target.value)}
+          data-cy='multiplication-input'
         ></input>
       </div>
       <div>
-        <Button className="startButton" text="Check" data-cy="startButton" onClick={handleAnswer} />
+        <Button
+          className="startButton"
+          text="Check"
+          data-cy="startButton"
+          onClick={handleAnswer}
+        />
       </div>
     </>
   );
