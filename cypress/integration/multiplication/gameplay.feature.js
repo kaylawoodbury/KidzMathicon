@@ -4,8 +4,8 @@ describe("User can", () => {
   beforeEach(() => {
     cy.visit("/")
     cy.get("[data-cy='startButton']").click();
-    cy.get("[data-cy='multiplier-5']").click();
       cy.stub(generateNumber, "generateNumber").as('randomMultiplier').returns(5);
+      cy.get("[data-cy='multiplier-5']").click();
   });
 
   it("successfully answer the question within the time", () => {
